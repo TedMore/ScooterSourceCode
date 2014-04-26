@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SelectLanguage</key>
+	<string>SELECT LANGUAGE</string>
+	<key>DisplayLanguage</key>
+	<string>ENGLISH</string>
+	<key>Warning</key>
+	<string>PLEASE TURN OFF SCOOTER AND SELECT CONNECTIVITY MODE !!</string>
+	<key>Bluetooth</key>
+	<string>BLUETOOTH</string>
+	<key>Connectivity</key>
+	<string>PLEASE SELECT CONNECTIVITY</string>
+	<key>Lock</key>
+	<string>LOCK</string>
+	<key>Map</key>
+	<string>PLEASE       SELECT MAP</string>
+	<key>Detail</key>
+	<string>View Details</string>
+	<key>Standard</key>
+	<string>STANDARD</string>
+	<key>Climbing</key>
+	<string>CLIMBING</string>
+	<key>Economy</key>
+	<string>ECONOMY</string>
+	<key>Sports</key>
+	<string>SPORTS</string>
+	<key>Highway</key>
+	<string>HIGHWAY</string>
+	<key>USB</key>
+	<string>USB</string>
+	<key>AlertContent</key>
+	<string>Not be used yet!!!</string>
+	<key>AlertWarning</key>
+	<string>Waring</string>
+	<key>Cancel</key>
+	<string>Cancel</string>
+	<key>MaxSpeed</key>
+	<string>MAX_SPEED</string>
+	<key>MaxRange</key>
+	<string>MAX_RANGE</string>
+	<key>DcVoltage</key>
+	<string>DC_VOTAGE</string>
+	<key>AnVoltage</key>
+	<string>AN_VOTAGE</string>
+</dict>
+</plist>

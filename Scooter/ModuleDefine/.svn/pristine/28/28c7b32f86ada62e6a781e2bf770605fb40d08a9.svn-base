@@ -1,0 +1,128 @@
+//
+//  ModuleTypeDef.h
+//  mbank
+//
+//  Created by lvyi on 11-4-20.
+//  Copyright 2011年 Cienet. All rights reserved.
+//
+
+//由业务模块id与相应模块的某个能力id组合成一个唯一的业务调用id
+//32位业务调用id = 模块id（高16位）＋ 能力id（低16位）
+#define MakeID(x, y) (((x)<<16) + (y))
+
+//从32位业务调用id中分离模块id
+#define ModuleID(x) ((x)>>16)
+
+//从32位业务调用id中分离能力id
+#define CapabilityID(x) (((x)<<16)>>16)
+
+//业务模块ID定义
+enum TModuleID {
+	//行动银行
+	EMobileBankManger = 1,
+	//多语言管理模块
+	ELanguageManager,
+	//网络管理模块
+	ENetworkManager,
+	//服务据点管理模块
+	EServicePointManger,
+	//Location管理模块
+	ELocationManager,
+	//Config管理模块
+	EConfigManager,
+};
+
+enum TMobileBankMangerCapability {
+	//分類帳號查詢
+	EGetAccountNOByType = 1,
+	
+};
+
+//多语言管理模块提供的业务功能
+enum TLanguageManagerCapability {
+	//获取字符串资源
+	EGetText = 1,
+	
+	//获取当前使用语言
+	EGetCurrentLanguage,
+    
+    //获取可用的语言项列表，例如中文和英文
+    EGetAvailableLanguageList,
+    
+	//改变当前语言配置
+	EChangeLanguage,
+    
+    //当语言模块加载完最新配置后会广播语言已经改变的通知
+	ELanguageChangeNotify,
+};
+
+enum TNetworkManagerCapability
+{
+	//连接到服务器
+	EConnectToServer,
+	//从服务器断开
+	EDisconnectFromServer,
+	//获取网络状态
+    EGetNetworkState,
+	//派发Http请求
+    EIssueHttpRequest,
+	//派发非交易类请求
+	EIssueNonTradeRequest,
+	//派发交易类请求
+	EIssueTradeRequest,
+	//派发请求，但不显示LoadingView
+	EIssueNoLoadingViewRequest,
+    //取消Http请求
+    ECancelHttpRequest,
+	//取消非交易类请求
+	ECancelNonTradeRequest,
+	//取消交易类请求
+	ECancelTradeRequest,
+	//取消不显示LoadingView请求
+	ECancelNoLoadingViewRequest,
+	//取消所有请求
+	ECancelAllRequests,
+    //请求响应通知
+    ENotifyNetworkResponse,
+    //请求失败通知
+    ENotifyNetworkRequestError,
+	//Session超时
+	ESessionTimeOut,
+};
+
+enum THttpRequestCapability {
+	//获取专员图档
+	EGetAgentImage = 1,
+	//获取产品介绍图档
+	EGetProdImage,
+	//获取验证码图档
+	EGetVerifyImage,
+	//活动登录图档
+	EGetActivityImage,
+	//最新消息图档
+	EGetNewsImage,
+	//获取理财一分钟图档
+	EGetFinanceMinuteImage,
+};
+
+enum TLocationManagerCapability {
+	//location service是否可用
+	ELocationServiceEnable = 1,
+	//获取当前自己的经纬度
+	EGetLocation,
+	//定位自己位置，但不广播
+	EStartLocation,
+};
+
+enum  TConfigManagerCapability {
+	EGetConfig = 1,
+};
+
+enum TServicePointManagerCapability {
+	//排序功能项，初始化工作
+	ESortInit = 1,
+	//添加最近操作
+	EAddLatelyOper,
+	//排序功能项，取最近二十次操作中最常用的两项功能
+	ESortFunction,
+};

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SelectLanguage</key>
+	<string>选择语言</string>
+	<key>DisplayLanguage</key>
+	<string>中文</string>
+	<key>Warning</key>
+	<string>请关闭电动车, 并且选择连接模式</string>
+	<key>Bluetooth</key>
+	<string>蓝牙</string>
+	<key>Connectivity</key>
+	<string>请选择连接方式</string>
+	<key>Lock</key>
+	<string>锁车</string>
+	<key>Map</key>
+	<string>请选择行驶模式</string>
+	<key>Detail</key>
+	<string>详情</string>
+	<key>Standard</key>
+	<string>标准模式</string>
+	<key>Climbing</key>
+	<string>爬山</string>
+	<key>Economy</key>
+	<string>经济</string>
+	<key>Sports</key>
+	<string>运动</string>
+	<key>Highway</key>
+	<string>高速</string>
+	<key>USB</key>
+	<string>USB</string>
+	<key>Cancel</key>
+	<string>退出</string>
+	<key>AlertWarning</key>
+	<string>警告</string>
+	<key>AlertContent</key>
+	<string>此功能暂时不可以用!!</string>
+	<key>MaxSpeed</key>
+	<string>最大速度</string>
+	<key>MaxRange</key>
+	<string>最大什么</string>
+	<key>DcVoltage</key>
+	<string>什么电压</string>
+	<key>AnVoltage</key>
+	<string>什么电流</string>
+</dict>
+</plist>

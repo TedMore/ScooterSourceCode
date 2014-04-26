@@ -1,0 +1,3 @@
+/* Localized versions of Info.plist keys */
+CFBundleDisplayName = "中国";
+"SelectLanguage" = "选择语言";

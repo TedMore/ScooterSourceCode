@@ -1,0 +1,15 @@
+//
+//  ModuleDef.h
+//  mbank
+//
+//  Created by lvyi on 11-4-20.
+//  Copyright 2011年 Cienet. All rights reserved.
+//
+
+#import "ModuleTypeDef.h"
+#import "LanguageModule.h"
+#import "NetworkManager.h"
+#import "ServicePointManger.h"
+#import "MobileBank.h"
+#import "LocationManager.h"
+#import "ConfigManager.h"
