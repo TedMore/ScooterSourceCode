@@ -6,10 +6,6 @@
 //  Copyright (c) 2014年 liustarsun. All rights reserved.
 //
 
-// Test Test
-// OK?
-
-// well?
 
 #import <UIKit/UIKit.h>
 
