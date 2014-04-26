@@ -1,7 +1,7 @@
 //
 //  UARTPeripheral.h
 //  nRF UART
-//
+//  Test git
 //  Created by Ole Morten on 1/12/13.
 //  Copyright (c) 2013 Nordic Semiconductor. All rights reserved.
 //
